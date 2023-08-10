@@ -23,8 +23,7 @@ all_train = []
 all_test = []
 all_eval = []
 
-with open(
-        'dataset1.pkl', 'rb') as f:
+with open('dataset1.pkl', 'rb') as f:
     train_set = pickle.load(f)
     for i in range(len(train_set)):
         tmp = copy.deepcopy(train_set[i])

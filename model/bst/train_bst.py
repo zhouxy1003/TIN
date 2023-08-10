@@ -26,7 +26,7 @@ all_train = []
 all_test = []
 all_eval = []
 
-with open('/cephfs/group/file-teg-datamining-wx-dm-intern/lukahlzhou/ft_local/DeepInterestNetwork-master/din/ft_local/dataset1.pkl', 'rb') as f:
+with open('dataset.pkl', 'rb') as f:
     train_set = pickle.load(f)
     
     for i in range(len(train_set)):

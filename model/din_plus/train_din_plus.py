@@ -4,9 +4,6 @@ import pickle
 import random
 import numpy as np
 import tensorflow as tf
-import sys
-
-sys.path.append('/apdcephfs/share_283382/xinyiizhou/tta/model/din_plus')
 from input import DataInput, DataInputTest
 from din_plus import Model
 
@@ -21,7 +18,7 @@ predict_batch_size = 32
 predict_users_num = 1000
 predict_ads_num = 100
 
-with open('/apdcephfs/share_283382/xinyiizhou/tta/dataset1.pkl', 'rb') as f:
+with open('dataset.pkl', 'rb') as f:
     train_set = pickle.load(f)
     test_set = pickle.load(f)
     eval_set = pickle.load(f)
@@ -63,7 +60,7 @@ def _eval(sess, model):
         test_gauc = test_auc_sum / len(test_set)
         test_logloss = test_loss_sum / (2 * len(test_set))
         best_auc = eval_gauc
-        model.save(sess, '/apdcephfs/share_283382/xinyiizhou/tta/save/model_din_plus.ckpt')
+        model.save(sess, 'save/model_din_plus.ckpt')
     return eval_gauc
 
 
