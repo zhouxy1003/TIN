@@ -56,7 +56,7 @@ This implementation contains the method TIN and all the other competitors, inclu
     python amazon_mul_c_pos.py
     ```
 
-<div align=center><img src="../TIN/visualization/amazon_category_674.png" alt="CTC" width="50%"></div>
+<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/visualization/amazon_category_674.png" alt="CTC" width="50%"></div>
 
 ### Visualize the learned quadruple correlation
 - Step 1: Save the value of position embedding and category embedding of different models after training as `p.npy` and `c.npy`.
@@ -64,4 +64,4 @@ This implementation contains the method TIN and all the other competitors, inclu
     ```bash
     python temporal_correlation.py
     ```
-<div align=center><img src="../TIN/visualization/tin_674.png" alt="learned quadruple correlation of TIN" width="50%"></div>
+<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/visualization/amazon_category_674.png" alt="learned quadruple correlation of TIN" width="50%"></div>
