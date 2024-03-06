@@ -4,10 +4,10 @@ The open source code for WWW 2024 paper "[Temporal Interest Network for User Res
 
 ## Model overview
 ### TIN architecture
-<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/model/TIN.png" alt="TIN architecture" width="50%"></div>
+<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/model/TIN.png" alt="TIN architecture" width="55%"></div>
 
 ### Temporal Interest Module
-<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/model/TIN_module.png" alt="Temporal Interest Module" width="50%"></div>
+<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/model/TIN_module.png" alt="Temporal Interest Module" width="60%"></div>
 
 ## Getting started
 
@@ -66,7 +66,7 @@ This implementation contains the method TIN and all the other competitors, inclu
     python amazon_mul_c_pos.py
     ```
 
-<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/visualization/ground_truth_STC.png" alt="Category-wise Target-aware Correlation" width="50%"></div>
+<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/visualization/ground_truth_STC.png" alt="Category-wise Target-aware Correlation" width="40%"></div>
 
 ### Visualize the learned semantic-temporal correlation
 - Step 1: Save the value of position embedding and category embedding of different models after training as `p.npy` and `c.npy`.
@@ -75,7 +75,7 @@ This implementation contains the method TIN and all the other competitors, inclu
     python temporal_correlation.py
     ```
     
-<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/visualization/TIN_STC.png" alt="Learned semantic-temporal correlation of TIN" width="50%"></div>
+<div align=center><img src="https://github.com/zhouxy1003/TIN/blob/main/visualization/TIN_STC.png" alt="Learned semantic-temporal correlation of TIN" width="40%"></div>
 
 ## Concat
 If you have any question about this implementation, please create an issue or send us an Email at:
