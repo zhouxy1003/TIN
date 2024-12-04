@@ -36,7 +36,7 @@ One can refer to the official code of [DIN](https://github.com/zhougr1993/DeepIn
 
 - Step 3: Build the amazon product dataset.
     ```bash
-    python build_dataset.py
+    python build_dataset_amazon.py
     ```
 Note that the key difference is that in our code, we split the dataset into training, validation, and test set, while in the original code of DIN, the authors only use training and test set. Such an approach may introduce **cherry-pick** problems, the performance of the model may be overestimated. Specifically, we save the model with the best performance on the validation set (**GAUC**), and use the prediction result of the saved model on the test set as the evaluation criterion for the current model.
 
